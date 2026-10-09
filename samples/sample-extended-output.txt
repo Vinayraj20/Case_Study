@@ -1,0 +1,25 @@
+==================== PROCESSING SUMMARY ====================
+Input records            : 11
+  RECEIVED               : 0
+  PENDING_SEQUENCE       : 1
+  PROCESSING             : 0
+  RETRY_PENDING          : 0
+  PROCESSED              : 4
+  FAILED                 : 2
+  DUPLICATE              : 1
+  REJECTED               : 3
+Retries performed        : 2
+Next expected sequence   : 8
+Missing sequences        : [8]
+Failed (needs recovery)  :
+  - TXN-3003 (insufficient funds)
+  - TXN-3006 (retries exhausted after 3 attempts)
+Still pending (blocked)  :
+  - TXN-3009 (seq 9)
+Rejected (dead letter)   :
+  - line 7 [TXN-3005]: amount must be numeric
+  - line 11 [TXN-3001]: transactionId reused with a different payload
+  - line 12 [TXN-3010]: malformed row: expected 7 columns, got 2; accountId is required; sequence is required; type is required; amount is required; currency is required
+Balances                 : {ACC-301=150, ACC-302=75.50, ACC-303=20}
+============================================================
+Downstream distinct effects: 4 (total calls incl. retries: 7)

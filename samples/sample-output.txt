@@ -1,0 +1,18 @@
+==================== PROCESSING SUMMARY ====================
+Input records            : 6
+  RECEIVED               : 0
+  PENDING_SEQUENCE       : 0
+  PROCESSING             : 0
+  RETRY_PENDING          : 0
+  PROCESSED              : 4
+  FAILED                 : 0
+  DUPLICATE              : 1
+  REJECTED               : 1
+Retries performed        : 1
+Next expected sequence   : 6
+Missing sequences        : none
+Rejected (dead letter)   :
+  - line 6 [TXN-2004]: amount must be positive
+Balances                 : {ACC-201=85, ACC-203=500}
+============================================================
+Downstream distinct effects: 4 (total calls incl. retries: 5)
